@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Camptun from './CampingTunisie.jpg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+            {/*} image from SRC FOLDER{*/}
+        <img src={Camptun} className="App-image" alt="camptunisie" />
+        <iframe className="videoo" src="https://www.youtube.com/embed/w7ejDZ8SWv8" title="YouTube video player" frameborder="0" allow="accelerometer;
+         autoplay; clipboard-write; encrypted-media;
+         gyroscope; picture-in-picture" allowfullscreen>
+         </iframe>
+             {/*} image from PUBLIC FOLDER{*/}
+         <img className="camp"src='./camp.jpg' alt='imagedecamping'/>
     </div>
   );
 }
